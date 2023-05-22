@@ -10,10 +10,16 @@
 <body>
     <header>
         <h1>Dario Laborde Jimenez</h1>
-        <div>
-
-        </div>
     </header>
+    <nav>
+        <ul id="navbar">
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#professional-experience">Professional experience</a></li>
+            <li><a href="#participation-in-events">Participation in events</a></li>
+            <li><a href="#references">References</a></li>
+        </ul>
+    </nav>
     <main>
         <section id="skills">
             <h2>Skills</h2>
@@ -21,18 +27,18 @@
                 <div>
                     <h3>Development Technologies</h3>
                     <ul>
-                        <li>Java: JavaSE, JavaFX, Spring, SpringBoot</li>
-                        <li>Python: Anaconda, NumPy</li>
-                        <li>Frontend development: HTML, CSS, JavaScript, TypeScript</li>
+                        <li><span>Java:</span> JavaSE, JavaFX, Spring, SpringBoot</li>
+                        <li><span>Python:</span> Anaconda, NumPy</li>
+                        <li><span>Frontend development:</span> HTML, CSS, JavaScript, TypeScript</li>
                     </ul>
                     <h3>Database Admisitration</h3>
                     <ul>
-                        <li>SQL: MySQL</li>
-                        <li>NoSQL: MongoDB</li>
+                        <li><span>SQL:</span> MySQL</li>
+                        <li><span>NoSQL:</span> MongoDB</li>
                     </ul>
                     <h3>Development Tools</h3>
                     <ul>
-                        <li>VCS: Git, Github</li>
+                        <li><span>VCS:</span> Git, Github</li>
                         <li>Postman</li>
                     </ul>
                 </div>
@@ -65,20 +71,44 @@
                 </div>
             </div>
         </section>
-        <section class="professional-experience">
+        <section id="professional-experience">
 
         </section>
-        <section class="participation-in-events">
+        <section id="participation-in-events">
             <h2>Participation In Events</h2>
             <div class="content-flex">
                 <p>21/04/2023 - 6/04/2023</p>
                 <p>Google Research ExploreCSR</p>
             </div>
         </section>
-        <section class="References">
+        <section id="references">
             
         </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Si requieres mis servicios llena este formulario y te contactaré proximamente</p>
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                <br>
+                <label for="reason">Reason:</label>
+                <textarea name="reason" id="reason" cols="30" rows="3"></textarea>
+                <br>
+                <button type="submit">Enviar</button>
+                <button type="reset">Cancelar</button>
+            </form>
+        </section>
     </main>
+    <footer>
+        <div>
+            <div>
+                <p>dfafasdasdfasdfasdfsa</p>
+            </div>
+            <div>
+                <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1993.4749548769291!2d-79.89675230721808!3d-2.17273995702923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6dc1d961413d%3A0x6e4d051830aaf784!2sSerimtec%20Pc%20Ecuador!5e0!3m2!1ses!2sec!4v1684783935603!5m2!1ses!2sec" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </footer>
     
 </body>
 </html>

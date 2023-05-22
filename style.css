@@ -1,3 +1,4 @@
+
 * {
     font-family: Arial, Helvetica, sans-serif;
     /*padding: 0;
@@ -6,9 +7,8 @@
 }
 
 body {
-    margin: 50px;
-    padding: 50px;
-    border: solid 1px black;
+    margin: 0px;
+    padding: 0px;
 }
 
 header {
@@ -16,10 +16,32 @@ header {
 }
 
 .content-flex {
-    display: flex;
-    justify-content: space-between;
+    /*display: flex;
+    justify-content: space-between;*/
 }
 
 .content-flex h3 {
     
+}
+
+span {
+    color: blueviolet;
+}
+
+footer {
+    border-top: 1px solid black;
+    margin: 0;
+    padding: 0;
+    background-color: slategrey;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#mapa {
+    margin: 20px;
 }
