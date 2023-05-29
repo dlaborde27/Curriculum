@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
     <title>Curriculum</title>
 </head>
@@ -14,6 +15,7 @@
     <nav>
         <ul id="navbar">
             <li><a href="#skills">Skills</a></li>
+            <li><a href="#proyects">Proyects</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#professional-experience">Professional experience</a></li>
             <li><a href="#participation-in-events">Participation in events</a></li>
@@ -21,35 +23,34 @@
         </ul>
     </nav>
     <main>
-        <section id="skills">
-            <h2>Skills</h2>
-            <div class="content-flex">
+
+        <section id="skills" class="impar">
+            <div>
+                <h2>Skills</h2>
                 <div>
                     <h3>Development Technologies</h3>
-                    <ul>
+                    <ul class="list-each-skill">
                         <li><span>Java:</span> JavaSE, JavaFX, Spring, SpringBoot</li>
                         <li><span>Python:</span> Anaconda, NumPy</li>
                         <li><span>Frontend development:</span> HTML, CSS, JavaScript, TypeScript</li>
                     </ul>
                     <h3>Database Admisitration</h3>
-                    <ul>
+                    <ul class="list-each-skill">
                         <li><span>SQL:</span> MySQL</li>
                         <li><span>NoSQL:</span> MongoDB</li>
                     </ul>
                     <h3>Development Tools</h3>
-                    <ul>
+                    <ul class="list-each-skill">
                         <li><span>VCS:</span> Git, Github</li>
                         <li>Postman</li>
                     </ul>
-                </div>
-                <div>
                     <h3>Languages</h3>
-                    <ul>
+                    <ul class="list-each-skill">
                         <li>Spanish (Native)</li>
                         <li>English (B1)</li>
                     </ul>
                     <h3>Personal Skills</h3>
-                    <ul>
+                    <ul class="list-each-skill">
                         <li>xdwdwL</li>
                         <li>xwd wxdwxdw</li>
                         <li>xwd wxdwxdw</li>
@@ -58,45 +59,240 @@
                 </div>
             </div>
         </section>
-        <section id="education">
-            <h2>Education</h2>
-            <div class="content-flex">
-                <div>
-                    <p>2021 - Actualidad</p>
-                    <p>Guayaquil</p>
-                </div>
-                <div>
-                    <p>Escuela Superior Politécnica del Litoral (ESPOL)</p>
-                    <p>Ingeniería en ciencias de la computación</p>
-                </div>
-            </div>
-        </section>
-        <section id="professional-experience">
 
-        </section>
-        <section id="participation-in-events">
-            <h2>Participation In Events</h2>
-            <div class="content-flex">
-                <p>21/04/2023 - 6/04/2023</p>
-                <p>Google Research ExploreCSR</p>
+        <section id="proyects" class="par">
+            <div>
+                <h2>Proyects</h2>
+                <div id="grid">
+                    <div>
+                        <h3>Research Web (Pagina web demostrativa de LBA<sup>2</sup>)</h3>
+                        <h4>Tecnologias Usadas:</h4>
+                            <ul>
+                                <li>JavaScript</li>
+                                <li>React</li>
+                                <li>Css</li>
+                                <li>Bootstrap</li>
+                                <li>html</li>
+                            </ul>
+                            <h4>Colaboradores</h4>
+                            <ul>
+                                <li>Dario Laborde Jimenez</li>
+                            </ul>
+                            <li><a href="https://github.com/dlaborde27/ResearchApp.git" target="_blank"><i class="fa fa-github icono-github"></i></a></li>
+                    </div>
+                    <div>
+                            <img width="700" src="./img/img_lbaa.jpg" alt="">
+                    </div>
+
+
+                    <div>
+                        <img width="500" src="./img/visualizador_directorios_treemap.png" alt="">
+                    </div>
+                    <div>
+                        <h3>Visualizador de directorios con TreeMap</h3>
+                        <h4>Tecnologias Usadas:</h4>
+                            <ul>
+                                <li>Java con JavaFX</li>
+                            </ul>
+                            <h4>Colaboradores</h4>
+                            <ul>
+                                <li>Dario Laborde Jimenez</li>
+                                <li>Jordan Salinas</li>
+                                <li>Jorge Gaibor</li>
+                            </ul>
+                            <li><a href="https://github.com/dlaborde27/Visualizador-de-directorios-con-TreeMap.git" target="_blank"><i class="fa fa-github icono-github"></i></i></a></li>
+                    </div>
+
+
+
+                    
+                    <div>
+                        <h3>Catalogo de videojuegos</h3>
+                        <h4>Tecnologias Usadas:</h4>
+                            <ul>
+                                <li>Java con javaFX</li>
+                            </ul>
+                            <h4>Colaboradores</h4>
+                            <ul>
+                                <li>Dario Laborde Jimenez</li>
+                                <li>Jordan Salinas</li>
+                                <li>Jorge Gaibor</li>
+                            </ul>
+                            <li><a href="https://github.com/dlaborde27/CatalogoDeVideojuegos.git" target="_blank"><i class="fa fa-github icono-github"></i></i></a></li>
+                    </div>
+                    <div>
+                            <img width="700" src="./img/catalogo_videojuegos.png" alt="">
+                    </div>
+
+
+
+
+                    <div>
+                        <img width="700" src="./img/consultorio_medico.png" alt="">
+                   </div>
+                    <div>
+                        <h3>Sistema de consultorio medico</h3>
+                        <h4>Tecnologias Usadas:</h4>
+                        <ul>
+                            <li>Java con javaFX</li>
+                        </ul>
+                        <h4>Colaboradores</h4>
+                        <ul>
+                            <li>Dario Laborde Jimenez</li>
+                            <li>Jordan Salinas</li>
+                            <li>Jose Miguel Santos</li>
+                        </ul>
+                        <li><a href="https://github.com/dlaborde27/Sistema-de-consultorio-medico.git" target="_blank"><i class="fa fa-github icono-github"></i></a></li>
+                    </div>
+                    
+
+                    <!--
+                    <aside class="aside-impar">
+                        <div>
+                            <h3>Research Web (Pagina web demostrativa de LBA<sup>2</sup>)</h3>
+                            <h4>Tecnologias Usadas:</h4>
+                                <ul>
+                                    <li>JavaScript</li>
+                                    <li>React</li>
+                                    <li>Css</li>
+                                    <li>Bootstrap</li>
+                                    <li>html</li>
+                                </ul>
+                                <h4>Colaboradores</h4>
+                                <ul>
+                                    <li>Dario Laborde Jimenez</li>
+                                </ul>
+                                <li><a href="https://github.com/dlaborde27/ResearchApp.git" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                        </div>
+                        <div>
+                                <img width="600" src="./img/img_lbaa.jpg" alt="">
+                        </div>
+                    </aside>
+
+                    <aside class="aside-par">
+                        <div>
+                            <h3>Visualizador de directorios con TreeMap</h3>
+                            <h4>Tecnologias Usadas:</h4>
+                                <ul>
+                                    <li>Java con JavaFX</li>
+                                </ul>
+                                <h4>Colaboradores</h4>
+                                <ul>
+                                    <li>Dario Laborde Jimenez</li>
+                                    <li>Jordan Salinas</li>
+                                    <li>Jorge Gaibor</li>
+                                </ul>
+                                <li><a href="https://github.com/dlaborde27/Visualizador-de-directorios-con-TreeMap.git" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                        </div>
+                        <div>
+                                <img width="600" src="./img/visualizador_directorios_treemap.png" alt="">
+                        </div>
+                    </aside>
+                    
+                    <aside class="aside-impar">
+                        <div>
+                            <h3>Catalogo de videojuegos</h3>
+                            <h4>Tecnologias Usadas:</h4>
+                                <ul>
+                                    <li>Java con javaFX</li>
+                                </ul>
+                                <h4>Colaboradores</h4>
+                                <ul>
+                                    <li>Dario Laborde Jimenez</li>
+                                    <li>Jordan Salinas</li>
+                                    <li>Jorge Gaibor</li>
+                                </ul>
+                                <li><a href="https://github.com/dlaborde27/CatalogoDeVideojuegos.git" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                        </div>
+                        <div>
+                                <img width="600" src="./img/catalogo_videojuegos.png" alt="">
+                        </div>
+                    </aside>
+
+                    <aside class="aside-par">
+                        <div>
+                            <h3>Sistema de consultorio medico</h3>
+                            <h4>Tecnologias Usadas:</h4>
+                            <ul>
+                                <li>Java con javaFX</li>
+                            </ul>
+                            <h4>Colaboradores</h4>
+                            <ul>
+                                <li>Dario Laborde Jimenez</li>
+                                <li>Jordan Salinas</li>
+                                <li>Jose Miguel Santos</li>
+                            </ul>
+                            <li><a href="https://github.com/dlaborde27/Sistema-de-consultorio-medico.git" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                        </div>
+                        <div>
+                                <img width="600" src="./img/consultorio_medico.png" alt="">
+                        </div>
+                    </aside>
+                    -->
+                </div>
             </div>
         </section>
-        <section id="references">
-            
+
+        <section id="professional-experience" class="impar">
+            <div>
+                <h2>Professional Experience</h2>
+                <div class="content-flex">
+                    <div>
+                        <p>2021 - Actualidad</p>
+                        <p>Guayaquil</p>
+                    </div>
+                    <div>
+                        <p>Escuela Superior Politécnica del Litoral (ESPOL)</p>
+                        <p>Ingeniería en ciencias de la computación</p>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Si requieres mis servicios llena este formulario y te contactaré proximamente</p>
-            <form>
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" required>
-                <br>
-                <label for="reason">Reason:</label>
-                <textarea name="reason" id="reason" cols="30" rows="3"></textarea>
-                <br>
-                <button type="submit">Enviar</button>
-                <button type="reset">Cancelar</button>
-            </form>
+
+        <section id="education" class="par">
+            <div>
+                <h2>Education</h2>
+                <div class="content-flex">
+                    <div>
+                        <p>2021 - Actualidad</p>
+                        <p>Guayaquil</p>
+                    </div>
+                    <div>
+                        <p>Escuela Superior Politécnica del Litoral (ESPOL)</p>
+                        <p>Ingeniería en ciencias de la computación</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="participation-in-events" class="impar">
+            <div>
+                <h2>Participation In Events</h2>
+                <div class="content-flex">
+                    <p>Google Research ExploreCSR</p>
+                    <p>21/04/2023 - 6/04/2023</p>
+                </div>
+                <div id="images">
+                    <img width="400" src="./img/img_csr_1.jpg" alt="">
+                    <img width="400" src="./img/img_csr_2.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="par">
+            <div>
+                <h2>Contact</h2>
+                <p>Si requieres mis servicios llena este formulario y te contactaré proximamente</p>
+                <form>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                    <br>
+                    <label for="reason">Reason:</label>
+                    <textarea name="reason" id="reason" cols="30" rows="3"></textarea>
+                    <br>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Cancelar</button>
+                </form>
+            </div>
         </section>
     </main>
     <footer>
