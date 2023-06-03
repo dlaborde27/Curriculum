@@ -3,9 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap');
 
 :root {
-    --background-footer-nav: #004643;
-    --background-par: #e8e4e6;
-    --background-impar: #abd1c6;
+    --background-footer-nav: #0B516B;
+    --background-impar: #2590B8;
     --span: #e16162;
     
 }
@@ -13,11 +12,19 @@
 * {
     padding: 0;
     margin: 0;
-    line-height: 50px;
+    line-height: 2.6rem;
+    box-sizing: border-box;
 }
 
 body {
     text-align: center;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 h1, h2 {
@@ -29,26 +36,26 @@ h3, h4 {
 }
 
 h1 {
-    font-size: 10px;
+    font-size: 2rem;
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 3rem;
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 2rem;
     color: #000080;
 }
 
 h4 {
-    font-size: 25px;
+    font-size: 1.6rem;
     color: #e16162;
 }
 
 p, li, span{
     font-family: 'Hind', sans-serif;
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 
 
@@ -66,8 +73,10 @@ nav {
 nav ul{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     background-color: var(--background-footer-nav);
 }
+
 li {
     list-style: none;
 }
@@ -113,65 +122,103 @@ footer > div {
     background-color: var(--background-impar);
 }
 
+.impar h2 {
+    color: #B83754;
+}
+.impar h3 {
+    color: #000000;
+}
+
+.par h2 {
+    color: #0B516B;
+}
+
+.par h4 {
+    color: #16719C;
+}
+
+.par h3 {
+    color: #BD414A;
+}
+
 section {
     display: flex;
     justify-content: center;
+    height: 100%;
 }
 
 section > div {
-    width: 1200px;
-    margin: 25px 0;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5rem 0 2rem 0;
 }
 
 section div h2 {
-    margin-bottom: 10px;
+    margin-bottom: 5%;
 }
 
 #images {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    width: 1%;
 }
-
-
-
-
-aside {
-    display: grid;
-    grid-template-columns: 2;
-    margin: 30px;
-}
-
-.aside-par {
-    flex-direction: row-reverse;
-}
-
 
 #grid {
-    width: 1fr;
+    width: 100%;
+    height: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 80px;
-    column-gap: 15px;
-    align-items: center;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 4%;
+    column-gap: 1%;
 }
 
 #grid > div {
     padding: 0;
     margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#grid div > img {
+    border-radius: 3%;
+    border: 0.1rem solid #000000;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-content h3 {
+    margin-top: 3%;
+    margin-bottom: 4%;
+}
+
+.grid-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    
-}
-
-#proyects > div {
-    width: 1500px;
 }
 
 .icono-github {
     font-size: 50px;
     color: var(--background-footer-nav);
     margin-top: 10px;
+}
+
+@media only screen and (max-width: 750px) {
+    #grid {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 9% 1fr 9% 1fr 9% 1fr 9% 1fr;
+        row-gap: 1%;
+    }
+    .grid-content h3 {
+        margin-top: 0;
+        margin-bottom: 4%;
+    }
 }
