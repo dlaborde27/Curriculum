@@ -4,23 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre mi trayectoria profesional y habilidades destacadas en mi currículum. Soy un apasionado del desarrollo web y tengo experiencia en HTML, CSS, JavaScript y frameworks como React. Conoce mi experiencia laboral, educación y proyectos destacados.">
+    <meta name="author" content="Dario Laborde Jimenez">
+    <meta name="keywords" content="curriculum, desarrollo web, HTML, CSS, JavaScript">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
-    <title>Curriculum</title>
+    <title>Curriculum Dario Laborde</title>
 </head>
 <body>
     <header>
-        <h1>Dario Laborde Jimenez</h1>
+        <h1>Curriculum Dario Laborde Jimenez</h1>
     </header>
     <nav>
         <ul id="navbar">
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#proyects">Proyects</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#professional-experience">Professional experience</a></li>
-            <li><a href="#participation-in-events">Participation in events</a></li>
-            <li><a href="#references">References</a></li>
+            <li><a id="link-skills" href="#skills">Skills</a></li>
+            <li><a id="link-proyect" href="#proyects">Proyects</a></li>
+            <li><a id="link-education" href="#education">Education</a></li>
+            <li><a id="link-professional" href="#professional-experience">Professional experience</a></li>
+            <li><a id="link-participation" href="#participation-in-events">Participation in events</a></li>
+            <li><a id="link-contact" href="#contact">Contact</a></li>
         </ul>
+        <img id="menu-btn" src="./img/menu-btn.png" alt="boton del menu">
     </nav>
     <main>
 
@@ -177,7 +181,7 @@
         <section id="participation-in-events" class="impar">
             <div>
                 <h2>Participation In Events</h2>
-                <div class="content-flex">
+                <div class="content-flex" id="content-exploreCSR">
                     <p>Google Research ExploreCSR</p>
                     <p>21/04/2023 - 6/04/2023</p>
                 </div>
@@ -190,16 +194,15 @@
         <section id="contact" class="par">
             <div>
                 <h2>Contact</h2>
-                <p>Si requieres mis servicios llena este formulario y te contactaré proximamente</p>
+                <p>Si estas interesado en que participe en algún proyecto tecnológico llena este formulario y te contactaré</p>
                 <form>
-                    <label for="email">Email:</label>
+                    <label for="email" id="id-email">Email:</label>
                     <input type="email" name="email" id="email" required>
-                    <br>
-                    <label for="reason">Reason:</label>
+                    <label for="reason" id="id-reason">Reason:</label>
                     <textarea name="reason" id="reason" cols="30" rows="3"></textarea>
-                    <br>
-                    <button type="submit">Enviar</button>
-                    <button type="reset">Cancelar</button>
+                    <button type="submit" id="enviar">Enviar</button>
+                    <button type="reset" id="cancelar">Cancelar</button>
+                    
                 </form>
             </div>
         </section>
@@ -214,6 +217,6 @@
             </div>
         </div>
     </footer>
-    
+    <script src="./index.js"></script>
 </body>
 </html>
